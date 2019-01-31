@@ -1,16 +1,6 @@
-body,::after,::before{
-  box-sizing: border-box;
-}
-body{
-  color: #325050;
-  font-family: 'Libre Baskerville', sans-serif;
-}
-h3{
-  font-family: 'Julius Sans One', sans-serif;
-}
-.row{
-  display: flex;
-}
+@import "reset";
+@import "initialization";
+
 @mixin  row($number_ofcolumns){
 
   @if($number_ofcolumns == 12){
@@ -77,6 +67,11 @@ h3{
 @for $i from 1 through 12 {
   @include row($i);
 }
+
+.row{
+  display: flex;
+}
+
 .some{
   background-color: black;
   width: 100px;
