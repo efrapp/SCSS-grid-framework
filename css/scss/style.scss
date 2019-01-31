@@ -1,80 +1,19 @@
 @import "reset";
 @import "initialization";
 
-@mixin  row($number_ofcolumns){
-
-  @if($number_ofcolumns == 12){
-    .col-12 {
-      flex-basis: 99%;
-    }
-  }
-  @if($number_ofcolumns == 11){
-    .col-11 {
-      flex-basis: 91.666%;
-    }
-  }
-  @if($number_ofcolumns == 10){
-    .col-10 {
-      flex-basis: 83.3333%;
-    }
-  }
-  @if($number_ofcolumns == 9){
-    .col-9 {
-      flex-basis: 75%;
-    }
-  }
-  @if($number_ofcolumns == 8){
-    .col-8 {
-      flex-basis: 66.66667%;
-    }
-  }
-  @if($number_ofcolumns == 7){
-    .col-7 {
-      flex-basis: 58.3333%;
-    }
-  }
-  @if($number_ofcolumns == 6){
-    .col-6 {
-      flex-basis: 50%;
-    }
-  }
-  @if($number_ofcolumns == 5){
-    .col-5  {
-      flex-basis: 41.66667%;
-    }
-  }
-  @if($number_ofcolumns == 4){
-    .col-4 {
-      flex-basis: 33.333%;
-    }
-  }
-  @if($number_ofcolumns == 3){
-    .col-3 {
-      flex-basis: 25%;
-    }
-  }
-  @if($number_ofcolumns == 2){
-    .col-2{
-      flex-basis: 16.66667%;
-    }
-  }
-  @if($number_ofcolumns == 1){
-    .col-1{
-      flex-basis: 8.3333%;
-    }
-  }
-}
-@for $i from 1 through 12 {
-  @include row($i);
+.header-bg{
+    background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    height: 310px;
 }
 
-.row{
-  display: flex;
+.hd-title::before{
+    background-image: url(http://www.csszengarden.com/214/enso.svg);
 }
 
-.some{
-  background-color: black;
-  width: 100px;
-  height: 100px;
-  margin:0 3px 0 3px;
+.side-bar{
+    position: absolute;
+}
+
+footer{
+    position: relative;
 }

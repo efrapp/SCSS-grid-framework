@@ -33,15 +33,41 @@ body {
 h3 {
   font-family: 'Julius Sans One', sans-serif; }
 
-.header-bg {
-  background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
-  height: 310px; }
+.col-1 {
+  flex-basis: 8.3333%; }
 
-.hd-title::before {
-  background-image: url(http://www.csszengarden.com/214/enso.svg); }
+.col-2 {
+  flex-basis: 16.66667%; }
 
-.side-bar {
-  position: absolute; }
+.col-3 {
+  flex-basis: 25%; }
 
-footer {
-  position: relative; }
+.col-4 {
+  flex-basis: 33.333%; }
+
+.col-5 {
+  flex-basis: 41.66667%; }
+
+.col-6 {
+  flex-basis: 50%; }
+
+.col-7 {
+  flex-basis: 58.3333%; }
+
+.col-8 {
+  flex-basis: 66.66667%; }
+
+.col-9 {
+  flex-basis: 75%; }
+
+.col-10 {
+  flex-basis: 83.3333%; }
+
+.col-11 {
+  flex-basis: 91.666%; }
+
+.col-12 {
+  flex-basis: 99%; }
+
+.row {
+  display: flex; }
