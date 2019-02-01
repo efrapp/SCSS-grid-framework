@@ -19,11 +19,12 @@
   position: absolute;
 }
 .title-container{
-  margin: 87px auto;
+  margin: 82px auto;
   position: relative;
   width: 70%;
 }
 .hd-title{
+    min-width: 600px; // Use if for responsive change
   padding-top: 41px;
   padding-left: 173px;
 }
@@ -34,9 +35,39 @@
   font-style: italic;
   color: #ffffff99;
 }
-.designs-btn{
-  color: #ffffff99;
+
+.all-designs {
+    display: flex;
+    justify-content: center;
+    margin: 118px 0;
 }
+
+.designs-btn{
+  background-color: #ffffff1a;
+  margin-right: 1px;
+  padding: 25px 0;
+  text-align: center;
+  width: 65%;
+}
+
+.designs-btn a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.designs-btn:hover, .arrow:hover{
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+.arrow {
+    background-color:  #ffffff1a;
+    color: white;
+    font-size: 36px;
+    padding: 12px 25px;
+}
+
 footer{
     position: relative;
 }
