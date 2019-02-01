@@ -16,7 +16,7 @@
 }
 
 .side-bar{
-  position: absolute;
+  //position: absolute;
 }
 .title-container{
   margin: 82px auto;
@@ -67,7 +67,37 @@
     font-size: 36px;
     padding: 12px 25px;
 }
-
+.downloads,.sub-titles{
+  padding-top: 16px;
+}
+p{
+  margin:12px 0;
+  line-height: 2;
+}
+.second-section{
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(138,188,159,0.5);
+  background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.fourth-section{
+  padding: 112px 189px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  background: #3e5d67;
+  background-attachment: fixed, fixed, fixed, scroll;
+  background-image: url(http://www.csszengarden.com/214/contours.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/koi.jpg);
+  background-position: 0 0, -5px -25px, 0 0, 0 50%;
+  background-repeat: repeat, repeat, repeat, no-repeat;
+  background-size: auto, auto, auto, cover;
+  font-size: 2em;
+  font-style: italic;
+}
+.donation p{
+  margin:0;
+}
 footer{
     position: relative;
+    padding:78px;
 }

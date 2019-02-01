@@ -6,12 +6,13 @@ body{
     font-family: $libre-baskerville;
 }
 
-h1, h3, a{
+h1,h2, h3, a{
     font-family: $julius-font;
 }
 
-h3{ 
+h3,h2{
     font-size: 1.8em;
+    font-weight: normal;
 }
 h1{
   font-size: 3.2em;

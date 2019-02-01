@@ -77,6 +77,21 @@
     transform: translate(-50%,-50%);
   }
 }
+@mixin wrapper{
+  .wrapper{
+    padding: 64px 95px 64px 190px;
+  }
+}
+@mixin inline-list{
+  .inline-list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding:0 15em;
+  }
+}
+@include inline-list;
+@include wrapper;
 @include relative;
 @include center;
 @for $i from 1 through 12 {
