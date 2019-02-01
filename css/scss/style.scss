@@ -2,18 +2,41 @@
 @import "initialization";
 
 .header-bg{
-    background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 66%,rgba(33,84,95,0.3) 66%,rgba(33,84,95,0) 100%),url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
     height: 310px;
+    background-size: cover;
 }
 
-.hd-title::before{
-    background-image: url(http://www.csszengarden.com/214/enso.svg);
+.logo{
+  background-image: url(http://www.csszengarden.com/214/enso.svg);
+  height: 125px;
+  width: 125px;
+  background-size: 100%;
+  float: left;
 }
 
 .side-bar{
-    position: absolute;
+  position: absolute;
 }
-
+.title-container{
+  margin: 87px auto;
+  position: relative;
+  width: 70%;
+}
+.hd-title{
+  padding-top: 41px;
+  padding-left: 173px;
+}
+.hd-title p{
+  font-size: 1.5em;
+  font-family: "Libre Baskerville", italic;
+  line-height: 2;
+  font-style: italic;
+  color: #ffffff99;
+}
+.designs-btn{
+  color: #ffffff99;
+}
 footer{
     position: relative;
 }
