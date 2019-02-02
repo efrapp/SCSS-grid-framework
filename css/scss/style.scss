@@ -24,7 +24,7 @@
   width: 70%;
 }
 .hd-title{
-    min-width: 600px; // Use if for responsive change
+  min-width: 600px; // Use if for responsive change
   padding-top: 41px;
   padding-left: 173px;
 }
@@ -98,6 +98,22 @@ p{
   margin:0;
 }
 footer{
+    background-color: #134347;
     position: relative;
-    padding:78px;
+    padding: 5%;
+}
+
+footer ul li{
+    color: white;
+    margin: 0 3em;
+}
+
+footer ul li i::before{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 350%;
+}
+
+footer ul li i:hover::before {
+    color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
