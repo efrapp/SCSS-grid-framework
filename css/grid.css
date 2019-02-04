@@ -1,4 +1,48 @@
 /*CREATING CLASS FOR RELATIVE POSITIONA AND A CLASS TO POSITIONT HE CHILD ELEMENT IN THE CENTER OF ITS PARENT DIV*/
+.column-list-border-top {
+  padding-top: 132px;
+  width: 59%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.column-list-border-top li {
+  border-top: 1px solid #a0b9ad;
+  padding: 24px 0 20px 0;
+  margin: 0;
+}
+
+.column-list-border-bottom {
+  padding-top: 64px;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.column-list-border-bottom li {
+  border-bottom: 1px solid #d9e3dc;
+  padding: 1.5em 10% 1.5em 0;
+  margin: 0 30% 0 15%;
+  color: #c0cac3;
+  width: 59%;
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+.column-list-border-bottom li p {
+  margin: 0;
+}
+
+.column-list-border-bottom li p a {
+  color: #616857;
+  font-size: 0.9em;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.column-list-border-bottom li p a:hover {
+  color: #1a5952;
+}
+
 .inline-list {
   display: flex;
   justify-content: space-evenly;

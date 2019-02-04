@@ -97,6 +97,28 @@ p{
 .donation p{
   margin:0;
 }
+
+.design-title a{
+  font-size: 20px;
+  text-decoration: none;
+  color: #607476;
+}
+.design-title a:hover{
+  color: #0d8ba1;
+}
+.side-bar{
+  background-color: #e5ede8;
+}
+.side-bar2{
+  background-color: rgba(138, 188, 159, 0.2);
+  background-image: url(http://www.csszengarden.com/214/bamboo.png);
+}
+.column-list-border-top li:nth-child(5){
+  border-bottom:1px solid #a0b9ad;
+}
+.side-bar3{
+  background-color: #e5ede8;
+}
 footer{
     position: relative;
     padding:78px;
