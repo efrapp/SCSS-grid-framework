@@ -43,25 +43,27 @@ h1 {
 
 .header-bg {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%, rgba(33, 84, 95, 0) 100%), url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
-  height: 310px;
+  height: 100%;
   background-size: cover; }
-
-.logo {
-  background-image: url(http://www.csszengarden.com/214/enso.svg);
-  height: 125px;
-  width: 125px;
-  background-size: 100%;
-  float: left; }
 
 .title-container {
   margin: 82px auto;
-  position: relative;
-  width: 70%; }
+  width: 625px; }
+
+.hd-title::before {
+  background-image: url(http://www.csszengarden.com/214/enso.svg);
+  background-size: 100%;
+  content: "";
+  height: 125px;
+  float: left;
+  margin-right: 40px;
+  width: 125px; }
 
 .hd-title {
-  min-width: 600px;
-  padding-top: 41px;
-  padding-left: 173px; }
+  min-width: 700px; }
+
+.hd-title h1 {
+  padding-top: 17px; }
 
 .hd-title p {
   font-size: 1.5em;
@@ -130,29 +132,23 @@ p {
 .design-title a {
   font-size: 20px;
   text-decoration: none;
-  color: #607476;
-}
+  color: #607476; }
 
 .design-title a:hover {
-  color: #0d8ba1;
-}
+  color: #0d8ba1; }
 
 .side-bar {
-  background-color: #e5ede8;
-}
+  background-color: #e5ede8; }
 
 .side-bar2 {
   background-color: rgba(138, 188, 159, 0.2);
-  background-image: url(http://www.csszengarden.com/214/bamboo.png);
-}
+  background-image: url(http://www.csszengarden.com/214/bamboo.png); }
 
 .column-list-border-top li:nth-child(5) {
-  border-bottom: 1px solid #a0b9ad;
-}
+  border-bottom: 1px solid #a0b9ad; }
 
 .side-bar3 {
-  background-color: #e5ede8;
-}
+  background-color: #e5ede8; }
 
 footer {
   background-color: #134347;
@@ -170,3 +166,14 @@ footer ul li i::before {
 footer ul li i:hover::before {
   color: rgba(255, 255, 255, 0.2);
   cursor: pointer; }
+
+@media only screen and (max-width: 992px) {
+  .title-container {
+    margin: 15px auto; }
+
+  .all-designs {
+    margin: 0; }
+
+  .designs-btn {
+    padding-left: 80px;
+    width: 100%; } }
