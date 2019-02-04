@@ -1,63 +1,63 @@
 
-@mixin  row($number_ofcolumns){
+@mixin  row($number_ofcolumns, $col_name){
 
   @if($number_ofcolumns == 12){
-    .col-12 {
-      flex-basis: 99%;
+    #{$col_name} {
+      flex-basis: 100%;
     }
   }
   @if($number_ofcolumns == 11){
-    .col-11 {
+    #{$col_name} {
       flex-basis: 91.666%;
     }
   }
   @if($number_ofcolumns == 10){
-    .col-10 {
+    #{$col_name} {
       flex-basis: 83.3333%;
     }
   }
   @if($number_ofcolumns == 9){
-    .col-9 {
+    #{$col_name} {
       flex-basis: 75%;
     }
   }
   @if($number_ofcolumns == 8){
-    .col-8 {
+    #{$col_name} {
       flex-basis: 66.66667%;
     }
   }
   @if($number_ofcolumns == 7){
-    .col-7 {
+    #{$col_name} {
       flex-basis: 58.3333%;
     }
   }
   @if($number_ofcolumns == 6){
-    .col-6 {
+    #{$col_name} {
       flex-basis: 50%;
     }
   }
   @if($number_ofcolumns == 5){
-    .col-5  {
+    #{$col_name}  {
       flex-basis: 41.66667%;
     }
   }
   @if($number_ofcolumns == 4){
-    .col-4 {
+    #{$col_name} {
       flex-basis: 33.333%;
     }
   }
   @if($number_ofcolumns == 3){
-    .col-3 {
+    #{$col_name} {
       flex-basis: 25%;
     }
   }
   @if($number_ofcolumns == 2){
-    .col-2{
+    #{$col_name}{
       flex-basis: 16.66667%;
     }
   }
   @if($number_ofcolumns == 1){
-    .col-1{
+    #{$col_name}{
       flex-basis: 8.3333%;
     }
   }
@@ -94,10 +94,32 @@
 @include wrapper;
 @include relative;
 @include center;
-@for $i from 1 through 12 {
-  @include row($i);
+
+@media only screen and (max-width: 1440px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-lg-" + $i);
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-md-" + $i);
+  }
+}
+
+@media only screen and (max-width: 992px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-sm-" + $i);
+  }
+}
+
+@media only screen and (max-width: 767px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-xs-" + $i);
+  }
 }
 
 .row{
   display: flex;
+  flex-wrap: wrap;
 }
