@@ -16,39 +16,48 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 *, ::after, ::before {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   color: #325050;
-  font-family: "Libre Baskerville", sans-serif; }
+  font-family: "Libre Baskerville", sans-serif;
+}
 
 h1, h2, h3, a {
-  font-family: "Julius Sans One", sans-serif; }
+  font-family: "Julius Sans One", sans-serif;
+}
 
 h3, h2 {
   font-size: 1.8em;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 h1 {
   font-size: 3.2em;
-  color: white; }
+  color: white;
+}
 
 .header-bg {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%, rgba(33, 84, 95, 0) 100%), url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .title-container {
   margin: 82px auto;
-  width: 625px; }
+  width: 625px;
+}
 
 .hd-title::before {
   background-image: url(http://www.csszengarden.com/214/enso.svg);
@@ -57,61 +66,73 @@ h1 {
   height: 125px;
   float: left;
   margin-right: 40px;
-  width: 125px; }
+  width: 125px;
+}
 
 .hd-title {
-  min-width: 700px; }
+  min-width: 700px;
+}
 
 .hd-title h1 {
-  padding-top: 17px; }
+  padding-top: 17px;
+}
 
 .hd-title p {
   font-size: 1.5em;
   font-family: "Libre Baskerville", italic;
   line-height: 2;
   font-style: italic;
-  color: #ffffff99; }
+  color: #ffffff99;
+}
 
 .all-designs {
   display: flex;
   justify-content: center;
-  margin: 118px 0; }
+  margin: 118px 0;
+}
 
 .designs-btn {
   background-color: #ffffff1a;
   margin-right: 1px;
   padding: 25px 0;
   text-align: center;
-  width: 65%; }
+  width: 65%;
+}
 
 .designs-btn a {
   color: white;
   font-size: 1.2em;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .designs-btn:hover, .arrow:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .arrow {
   background-color: #ffffff1a;
   color: white;
   font-size: 36px;
-  padding: 12px 25px; }
+  padding: 12px 25px;
+}
 
 .downloads, .sub-titles {
-  padding-top: 16px; }
+  padding-top: 16px;
+}
 
 p {
   margin: 12px 0;
-  line-height: 2; }
+  line-height: 2;
+}
 
 .second-section {
   background-attachment: scroll, scroll, fixed;
   background-color: rgba(138, 188, 159, 0.5);
   background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
   background-repeat: repeat, repeat, no-repeat;
-  background-size: auto, auto, cover; }
+  background-size: auto, auto, cover;
+}
 
 .fourth-section {
   padding: 112px 189px;
@@ -124,56 +145,121 @@ p {
   background-repeat: repeat, repeat, repeat, no-repeat;
   background-size: auto, auto, auto, cover;
   font-size: 2em;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .donation p {
-  margin: 0; }
+  margin: 0;
+}
 
 .design-title a {
   font-size: 20px;
   text-decoration: none;
-  color: #607476; }
+  color: #607476;
+}
 
 .design-title a:hover {
-  color: #0d8ba1; }
+  color: #0d8ba1;
+}
 
 .side-bar {
-  background-color: #e5ede8; }
+  background-color: #e5ede8;
+}
 
 .side-bar2 {
   background-color: rgba(138, 188, 159, 0.2);
-  background-image: url(http://www.csszengarden.com/214/bamboo.png); }
+  background-image: url(http://www.csszengarden.com/214/bamboo.png);
+}
 
 .column-list-border-top li:nth-child(5) {
-  border-bottom: 1px solid #a0b9ad; }
+  border-bottom: 1px solid #a0b9ad;
+}
 
 .side-bar3 {
-  background-color: #e5ede8; }
+  background-color: #e5ede8;
+}
 
 footer {
   background-color: #134347;
   position: relative;
-  padding: 5%; }
+  padding: 5%;
+}
 
 footer ul li {
   color: white;
-  margin: 0 3em; }
+  margin: 0 3em;
+}
 
 footer ul li i::before {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 350%; }
+  font-size: 350%;
+}
 
 footer ul li i:hover::before {
   color: rgba(255, 255, 255, 0.2);
-  cursor: pointer; }
+  cursor: pointer;
+}
 
+@media only screen and (max-width: 1140px) {
+  body {
+    position: relative;
+  }
+
+  .side-bar {
+    position: absolute;
+    bottom: -517px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .side-bar ul li {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: 0;
+  }
+
+  .side-bar2 {
+    background-color: rgba(138, 188, 159, 0.5);
+    position: absolute;
+    bottom: -713px;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .side-bar2 ul {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .side-bar2 ul li {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    float: left;
+  }
+
+  .side-bar2 ul li:nth-child(4) {
+    border-bottom: 1px solid #a0b9ad;
+  }
+}
 @media only screen and (max-width: 992px) {
   .title-container {
-    margin: 15px auto; }
+    margin: 15px auto;
+  }
 
   .all-designs {
-    margin: 0; }
+    margin: 0;
+  }
 
   .designs-btn {
     padding-left: 80px;
-    width: 100%; } }
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

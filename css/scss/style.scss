@@ -152,7 +152,47 @@ footer ul li i:hover::before {
     color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
-
+@media only screen and (max-width:1140px){
+  body{
+    position: relative;
+  }
+  .side-bar{
+    position: absolute;
+    bottom: -517px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .side-bar ul li{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: 0;
+  }
+  .side-bar2{
+    background-color: rgba(138,188,159,0.5); 
+    position: absolute;
+    bottom: -713px;
+    padding:0;
+    overflow: hidden;
+    width: 100%;
+  }
+  .side-bar2 ul{
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+  .side-bar2 ul li{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    float: left;
+  }
+  .side-bar2 ul li:nth-child(4){
+    border-bottom: 1px solid #a0b9ad;
+  }
+}
 @media only screen and (max-width: 992px){
 
   .title-container{

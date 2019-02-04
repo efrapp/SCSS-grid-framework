@@ -103,7 +103,7 @@
       padding: 24px 0 20px 0;
       margin: 0;
     }
-  
+
   }
   @if($border_position == bottom){
     .column-list-border-bottom{
@@ -141,6 +141,11 @@
 @include relative;
 @include center;
 
+@media only screen and (min-width: 1441px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-lg-" + $i);
+  }
+}
 @media only screen and (max-width: 1440px){
   @for $i from 1 through 12 {
     @include row($i, ".col-lg-" + $i);
