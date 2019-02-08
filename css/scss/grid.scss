@@ -1,0 +1,176 @@
+
+@mixin  row($number_ofcolumns, $col_name){
+
+  @if($number_ofcolumns == 12){
+    #{$col_name} {
+      flex-basis: 100%;
+    }
+  }
+  @if($number_ofcolumns == 11){
+    #{$col_name} {
+      flex-basis: 91.666%;
+    }
+  }
+  @if($number_ofcolumns == 10){
+    #{$col_name} {
+      flex-basis: 83.3333%;
+    }
+  }
+  @if($number_ofcolumns == 9){
+    #{$col_name} {
+      flex-basis: 75%;
+    }
+  }
+  @if($number_ofcolumns == 8){
+    #{$col_name} {
+      flex-basis: 66.66667%;
+    }
+  }
+  @if($number_ofcolumns == 7){
+    #{$col_name} {
+      flex-basis: 58.3333%;
+    }
+  }
+  @if($number_ofcolumns == 6){
+    #{$col_name} {
+      flex-basis: 50%;
+    }
+  }
+  @if($number_ofcolumns == 5){
+    #{$col_name}  {
+      flex-basis: 41.66667%;
+    }
+  }
+  @if($number_ofcolumns == 4){
+    #{$col_name} {
+      flex-basis: 33.333%;
+    }
+  }
+  @if($number_ofcolumns == 3){
+    #{$col_name} {
+      flex-basis: 25%;
+    }
+  }
+  @if($number_ofcolumns == 2){
+    #{$col_name}{
+      flex-basis: 16.66667%;
+    }
+  }
+  @if($number_ofcolumns == 1){
+    #{$col_name}{
+      flex-basis: 8.3333%;
+    }
+  }
+}
+
+/*CREATING CLASS FOR RELATIVE POSITIONA AND A CLASS TO POSITIONT HE CHILD ELEMENT IN THE CENTER OF ITS PARENT DIV*/
+@mixin relative{
+  .relative{
+    position: relative;
+  }
+}
+@mixin center{
+  .center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+@mixin wrapper{
+  .wrapper{
+    padding: 64px 95px 64px 190px;
+  }
+}
+@mixin inline-list{
+  .inline-list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding:0 15em;
+  }
+}
+@mixin column-list-border($border_position){
+  @if($border_position == top){
+    .column-list-border-top{
+      padding-top: 132px;
+      width: 59%;
+      margin-left:15%;
+      list-style: none;
+    }
+    .column-list-border-top li{
+      border-top: 1px solid #a0b9ad;
+      padding: 24px 0 20px 0;
+      margin: 0;
+    }
+
+  }
+  @if($border_position == bottom){
+    .column-list-border-bottom{
+      padding-top: 64px;
+      margin: 0;
+      list-style: none;
+      overflow: hidden;
+    }
+    .column-list-border-bottom li{
+      border-bottom: 1px solid #d9e3dc;
+      padding:1.5em 10% 1.5em 0;
+      margin:0 30% 0 15%;
+      color:#c0cac3;
+      width: 59%;
+      font-family:'Libre Baskerville', sans-serif;
+    }
+    .column-list-border-bottom li p{
+      margin:0;
+    }
+    .column-list-border-bottom li p a{
+      color: #616857;
+      font-size: 0.9em;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .column-list-border-bottom li p a:hover{
+      color: #1a5952;
+    }
+  }
+}
+@include column-list-border(top) ;
+@include column-list-border(bottom) ;
+@include inline-list;
+@include wrapper;
+@include relative;
+@include center;
+
+@media only screen and (min-width: 1441px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-lg-" + $i);
+  }
+}
+@media only screen and (max-width: 1440px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-lg-" + $i);
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-md-" + $i);
+  }
+}
+
+@media only screen and (max-width: 992px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-sm-" + $i);
+  }
+}
+
+@media only screen and (max-width: 767px){
+  @for $i from 1 through 12 {
+    @include row($i, ".col-xs-" + $i);
+  }
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
